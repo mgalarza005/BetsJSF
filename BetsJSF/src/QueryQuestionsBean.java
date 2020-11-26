@@ -105,10 +105,8 @@ public class QueryQuestionsBean {
 			e.setQuestions(gertaerak.get(i).getQuestions());
 			events.add(e);
 		}*/
-		this.questions = events.get(0).getQuestions();
-		for(int i=0; i<questions.size() ; i++) {
-			System.out.println(questions.get(i).getQuestion());
-		}
+		this.questions =this.event.getQuestions();
+		
 		return this.questions;
 			
 	}

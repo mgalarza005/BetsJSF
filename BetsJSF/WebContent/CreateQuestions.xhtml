@@ -11,37 +11,63 @@
 </h:head>
 <h:body>
 	<h:form>
-	
-	<h3>Create Questions</h3>
-	
-	<tr>
-		<td>Galdera</td>
-		<td><h:inputText id="galdera" value="#{createBean.galdera}">
-				<!--  <f:validateRegex pattern="^(([a‐z]|[A‐Z])+[0‐9]?)$"/> -->
-			</h:inputText></td>
-		<td><h:message for="izen" style="color:green" /></td>
-	</tr>
-	<tr>
-		<td>Min bet</td>
-		<td><h:inputText id="minBet" value="#{createBean.minBet}">
-				<!--  <f:validateRegex pattern="^(([a‐z]|[A‐Z])+[0‐9]?)$"/> -->
-			</h:inputText></td>
-		<td><h:message for="izen" style="color:green" /></td>
-	</tr>
-<tr>
-	<td><h1>Event Date</h1></td>
-	<p:calendar id="data" value="#{createBean.data}" navigator="true"
-		mode="popup">
-		<p:ajax event="dateSelect" listener="#{createBean.getEvents}"
-			update="mezuak"></p:ajax>
-	</p:calendar>
+
+		<h3>Create Questions</h3>
 
 
-	<h:messages id="mezuak" style="color:blue" />
-</tr>
+		<tr>
+			<td><h1>Event Date</h1></td>
+			<p:calendar id="data" value="#{createBean.data}" navigator="true"
+				mode="popup">
+				<p:ajax event="dateSelect" listener="#{createBean.getEvents2}"
+					update="taulaEvents1"></p:ajax>
+			</p:calendar>
+
+
+			<h:messages id="mezuak" style="color:blue" />
+		</tr>
+		<tr>
+			<td>Galdera</td>
+			<td><h:inputText id="galdera" value="#{createBean.galdera}">
+					<!--  <f:validateRegex pattern="^(([a‐z]|[A‐Z])+[0‐9]?)$"/> -->
+				</h:inputText></td>
+			<td><h:message for="izen" style="color:green" /></td>
+		</tr>
+		<tr>
+			<td>Min bet</td>
+			<td><h:inputText id="minBet" value="#{createBean.minBet}">
+					<!--  <f:validateRegex pattern="^(([a‐z]|[A‐Z])+[0‐9]?)$"/> -->
+				</h:inputText></td>
+			<td><h:message for="izen" style="color:green" /></td>
+		</tr>
+		<tr>
+			<td><h1>Events</h1></td>
+		</tr>
+		<tr>
+			<td><h:dataTable id="taulaEvents1" value="#{createBean.events}"	var="event" border="1">
+					<f:facet name="header">Events:</f:facet>
+					<h:column>
+						<f:facet name="header">Kodea</f:facet>
+							
+							#{event.eventNumber}
+						</h:column>
+					<h:column>
+						<f:facet name="header">Mota</f:facet>
+							
+							#{event.description}
+						</h:column>
+					<h:column>
+						<f:facet name="header"></f:facet>
+						<h:commandButton value="Aukeratu" action="#{createBean.createQuestion(event)}" />
+					</h:column>
+
+
+				</h:dataTable></td>
+
+		</tr>
 
 	</h:form>
-	</h:body>
+</h:body>
 </html>
 
 <!-- MEZUENA GALDETU -->
