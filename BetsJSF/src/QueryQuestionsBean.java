@@ -74,6 +74,7 @@ public class QueryQuestionsBean {
 	
 	
 	public List<Event> getEvents2(SelectEvent d1){
+		events.clear();
 		BLFacade facadeBL;
 		facadeBL=FacadeBean.getBusinessLogic();
 		System.out.println("Eventuak");
