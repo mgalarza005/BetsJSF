@@ -71,7 +71,7 @@ public class QueryQuestionsBean {
 				new FacesMessage("Data aukeratua: "+ this.data.toString()));
 	}
 	
-	
+	 
 	
 	public List<Event> getEvents2(SelectEvent d1){
 		events.clear();
