@@ -87,27 +87,11 @@ public class QueryQuestionsBean {
 			e.setQuestions(gertaerak.get(i).getQuestions());
 			events.add(e);
 		}
-		/*
-		for(int i=0; i<events.size() ; i++) {
-			System.out.println(events.get(i).getDescription());
-		}*/
+		
 		return gertaerak;
 	}
 	public List<Question> getQuestions2(){
-		//BLFacade facadeBL;
-		//facadeBL=FacadeBean.getBusinessLogic();
-		//System.out.println("Eventuak");
-		/*
-		for(int i=0; i<gertaerak.size() ; i++) {
-			System.out.println(gertaerak.get(i).getDescription());
-			
-			
-			Event e = new Event(gertaerak.get(i).getEventNumber(),gertaerak.get(i).getDescription(),gertaerak.get(i).getEventDate());
-			e.setQuestions(gertaerak.get(i).getQuestions());
-			events.add(e);
-		}*/
 		this.questions =this.event.getQuestions();
-		
 		return this.questions;
 			
 	}
