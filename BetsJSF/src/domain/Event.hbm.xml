@@ -14,7 +14,7 @@
         <property name="eventDate" type="java.util.Date">
             <column name="EVENTDATE" />
         </property>
-        <list name="questions" inverse="false" table="QUESTION" lazy="true">
+        <list name="questions" inverse="false" table="QUESTION" lazy="false">
             <key>
                 <column name="EVENTNUMBER" />
             </key>

@@ -179,16 +179,16 @@ public class HibernateDataAccess {
 		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
 
-
+		
 		session.createQuery("from Event").list();
 
 		//Event ev = db.find(Event.class, event.getEventNumber());
-		List<Event> res = session.createQuery("from Event ev where ev.eventNumber= :eventNumber").list();
+		List<Event> res = session.createQuery("from Event ev where ev.eventNumber='"+eventNumber+"'").list();
 		Event ev = (Event) res.get(0);
 		if (ev.DoesQuestionExists(question)) throw new QuestionAlreadyExist(ResourceBundle.getBundle("Etiquetas").getString("ErrorQueryAlreadyExist"));
 
 		Question q = ev.addQuestion(question, betMinimum);
-
+		session.save(q);
 		session.save(ev);
 		session.getTransaction().commit();
 
