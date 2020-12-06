@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Vector;
+
 
 import businessLogic.BLFacade;
+import businessLogic.BLFacadeImplementation;
 import domain.Event;
 import domain.Question;
 
@@ -74,13 +75,13 @@ public class QueryQuestionsBean {
 	 
 	
 	public List<Event> getEvents2(SelectEvent d1){
-		events.clear();
+		//events.clear();
 		BLFacade facadeBL;
 		facadeBL=FacadeBean.getBusinessLogic();
-		System.out.println("Eventuak");
+		System.out.println("data QueryBean "+ this.data);
 		List<Event> gertaerak= facadeBL.getEvents(this.data);
 		for(int i=0; i<gertaerak.size() ; i++) {
-			System.out.println(gertaerak.get(i).getDescription());
+			//System.out.println(gertaerak.get(i).getDescription());
 			
 			
 			Event e = new Event(gertaerak.get(i).getEventNumber(),gertaerak.get(i).getDescription(),gertaerak.get(i).getEventDate());

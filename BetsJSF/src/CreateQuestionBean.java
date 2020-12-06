@@ -60,7 +60,8 @@ public class CreateQuestionBean {
 	public List<Event> getEvents2(SelectEvent d1){
 		BLFacade facadeBL;
 		facadeBL=FacadeBean.getBusinessLogic();
-
+		
+		System.out.println("Facade!!!!!!!!!!!!  " +facadeBL.toString());
 		List<Event> gertaerak= facadeBL.getEvents(this.data);
 		for(int i=0; i<gertaerak.size() ; i++) {
 			System.out.println(gertaerak.get(i).getDescription());

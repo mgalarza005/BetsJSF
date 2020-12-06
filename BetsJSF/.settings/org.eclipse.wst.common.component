@@ -1,7 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="BetsJSF">
+    <wb-module deploy-name="BetsJSF-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="tomcat-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/required/slf4j-api-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-zh-CN.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-zh-CN.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-8.0.22.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/mysql-connector-java-8.0.22.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="catalina-storeconfig.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/catalina-storeconfig.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="annotations-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/annotations-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="catalina-tribes.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/catalina-tribes.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-fr.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-fr.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-util.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-util.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsp-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/jsp-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-jni.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-jni.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="websocket-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/websocket-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.jws-3.1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/javax.jws-3.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-jpa-2.0-api-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/jpa/hibernate-jpa-2.0-api-1.0.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-dbcp.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-dbcp.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.15-bin.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/mysql-connector-java-5.1.15-bin.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/required/commons-collections-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-de.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-de.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-es.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-es.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-cs.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-cs.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ecj-4.15.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/ecj-4.15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jasper-el.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/jasper-el.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-util-scan.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-util-scan.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/required/antlr-2.7.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.26.0-GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/required/javassist-3.26.0-GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="catalina-ant.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/catalina-ant.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-2.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/required/dom4j-2.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-nop-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/slf4j-nop-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-jdbc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-jdbc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-pt-BR.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-pt-BR.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-ko.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-ko.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="catalina-ha.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/catalina-ha.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-websocket.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-websocket.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaspic-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/jaspic-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-coyote.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-coyote.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="catalina-ssi.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/catalina-ssi.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="servlet-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/servlet-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/hibernate3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="el-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/el-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="catalina.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/catalina.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-ru.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-ru.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.14.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/log4j-1.2.14.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/libHibernate/required/jta-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-i18n-ja.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/tomcat-i18n-ja.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jasper.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/MIKEL1/Desktop/SI2Alfredo/apache-tomcat-9.0.39/lib/jasper.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="BetsJSF"/>
         <property name="java-output-path" value="/BetsJSF/build/classes"/>
     </wb-module>
