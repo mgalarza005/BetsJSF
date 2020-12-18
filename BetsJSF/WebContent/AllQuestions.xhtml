@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1‐transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+<h:outputStylesheet library="css" name="style.css" />
+<title>Query Questions</title>
+</h:head>
+<body>
+	<h:form>
+		<h3>All Questions</h3>
+		
+					
+			<tr>
+				<td><h1>Questions</h1></td>
+			</tr>
+			<tr>
+				<td>
+			<table border="1px">
+				<tr>
+					<td>
+				
+				 
+					<h:dataTable id="taulaQuestions" value="#{queryBean.allQuestions}" var="question" border="1">
+						<f:facet name="header">Questions:</f:facet>
+						<h:column>
+							<f:facet name="header">Kodea</f:facet>
+							
+							#{question.questionNumber}
+						</h:column>
+						<h:column>
+							<f:facet name="header">Question</f:facet>
+							
+							#{question.question}
+						</h:column>
+						<h:column>
+							<f:facet name="header">Bet Minimun</f:facet>
+							
+							#{question.betMinimum}
+						</h:column>
+						
+						
+					</h:dataTable>
+				</td>
+
+				</tr>
+			</table>
+			</td>
+			</tr>
+	
+		<h:messages id="mezuak" style="color:blue" />
+	</h:form>
+</body>
+</html>

@@ -80,6 +80,7 @@ public class QueryQuestionsBean {
 		facadeBL=FacadeBean.getBusinessLogic();
 		System.out.println("data QueryBean "+ this.data);
 		List<Event> gertaerak= facadeBL.getEvents(this.data);
+		events.clear();
 		for(int i=0; i<gertaerak.size() ; i++) {
 			//System.out.println(gertaerak.get(i).getDescription());
 			
@@ -95,5 +96,32 @@ public class QueryQuestionsBean {
 		this.questions =this.event.getQuestions();
 		return this.questions;
 			
+	}
+	public List<Question> getAllQuestions() {
+		BLFacade facadeBL;
+		facadeBL=FacadeBean.getBusinessLogic();
+		List<Event> gertaerak= facadeBL.gertaerakZerrendatu();
+		System.out.println("mmmm");
+		System.out.println(gertaerak.size());
+		for(int i=0; i<gertaerak.size() ; i++) {
+			System.out.println(gertaerak.size());
+			
+			Event e = new Event(gertaerak.get(i).getEventNumber(),gertaerak.get(i).getDescription(),gertaerak.get(i).getEventDate());
+			e.setQuestions(gertaerak.get(i).getQuestions());
+			List<Question> qs= e.getQuestions();
+			
+			System.out.println(qs.size() +"kkkkkkkkkkkkk");
+			for (int j=0; j<qs.size(); j++) {
+				
+				Question q = new Question(qs.get(j).getQuestionNumber(), qs.get(j).getQuestion(), qs.get(j).getBetMinimum(), e);
+				
+				System.out.println("Galdera: " + q.getQuestion() +  "Zenbakia: " + q.getQuestionNumber());
+				this.questions.add(q);
+			}
+			e.setQuestions(gertaerak.get(i).getQuestions());
+			
+			
+		}
+		return this.questions;
 	}
 }

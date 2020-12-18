@@ -114,6 +114,13 @@ public class BLFacadeImplementation  implements BLFacade {
 		 System.out.println("Proba programa atzitzen da");
 	 }
 
+
+	@Override
+	public List<Event> gertaerakZerrendatu() {
+		HibernateDataAccess dataAccessHiber = new HibernateDataAccess();
+		return dataAccessHiber.gertaerakZerrendatu();
+	}
+
 /*
 	/**
 	 * This method invokes the data access to initialize the database with some events and questions.

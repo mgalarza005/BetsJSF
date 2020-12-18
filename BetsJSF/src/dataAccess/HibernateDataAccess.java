@@ -196,8 +196,8 @@ public class HibernateDataAccess {
 
 	}
 	public List<Event> getEvents(Date date) {
-		System.out.println(">> DataAccess: getEvents");
-		System.out.println("data HDA: "+ date);
+		//System.out.println(">> DataAccess: getEvents");
+		//System.out.println("data HDA: "+ date);
 		SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
 		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -205,6 +205,19 @@ public class HibernateDataAccess {
 		session.getTransaction().commit();
 		return result;
 	}
+	/*
+	public List<Event> getEvents() {
+		//System.out.println(">> DataAccess: getEvents");
+		//System.out.println("data HDA: "+ date);
+		SimpleDateFormat format = new SimpleDateFormat("yy-MM-dd");
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		List<Event> result = session.createQuery("from Event ev").list();
+		session.getTransaction().commit();
+		return result;
+	}*/
+	
+	
 	public void proba() {
 		System.out.println("Proba programa deitzen du");
 	}

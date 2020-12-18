@@ -47,6 +47,9 @@ public interface BLFacade  {
 	 * @return collection of dates
 	 */
 	 public List<Date> getEventsMonth(Date date);
+
+
+	public List<Event> gertaerakZerrendatu();
 	
 	/**
 	 * This method calls the data access to initialize the database with some events and questions.
